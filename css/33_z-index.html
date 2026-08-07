@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            position: relative;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            position: absolute;
+        }
+        #box1{
+            background-color: lightcoral;
+            top: 50px;
+            left: 50px;
+            
+        }
+         #box2{
+            background-color: rgb(206, 197, 75);
+            top: 100px;
+            left: 100px;
+            z-index: 1;
+        }
+         #box3{
+            background-color: rgb(59, 211, 29);
+            top:150px;
+            left: 150px;
+        }
+         #box4{
+            background-color: rgb(47, 65, 226);
+            top: 200px;
+            left: 200px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

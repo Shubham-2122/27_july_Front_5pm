@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            height: 800px;
+            border: 2px solid;
+            display: flex;
+            background-color: orange;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+        }
+
+        /* #box1{
+            background-color: lightblue;
+            position: static;
+            top: 200px;
+        } */
+        /* #box2{
+            background-color: lightcoral;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 30px;
+            bottom: 30px;
+         } */
+
+        /* #box3{
+            background-color: lavenderblush;
+            position: sticky;
+            top: 20px;
+         } */
+        /* #box4 {
+            background-color: aqua;
+            position: relative;
+            top: 39px;
+            left: 50px;
+        } */
+        #box5 {
+            position: relative;
+        }
+
+        .box1 {
+            height: 25px;
+            width: 25px;
+            background-color: aqua;
+            position: absolute;
+            /* top: 100%;
+            left: 100%; */
+            bottom: 0;
+            right: 0;
+        }
+
+        .box2 {
+            height: 25px;
+            width: 25px;
+            background-color: lightgreen;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- position :  
+        1) static : defulat (px,%,em) . top,bottom,left,right 
+        2) fixed : by body  (px,%,em) . top,bottom,left,right 
+        3) stckiy : by section (px,%,em) . top,bottom,left,right  
+        4) reletaive : (prenet) : (px,%,em) . top,bottom,left,right  
+        5) absoulte : (child) : (px,%,em) . top,bottom,left,right 
+    -->
+
+    <div class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">
+            <div class="box1">5</div>
+            <div class="box2">2</div>
+        </div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+    <div class="main"></div>
+    <div class="main">
+
+    </div>
+
+</body>
+
+</html>
