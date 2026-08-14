@@ -1,0 +1,26 @@
+@media only screen and (max-width:1160px) {}
+
+@media only screen and (max-width:992px) {
+    
+}
+
+@media only screen and (max-width:768px) {
+    .list {
+        display: none;
+    }
+
+    .icons .se {
+       display: none;
+    }
+
+    .icons .bar {
+    display: block;
+    }
+    .header-content {
+        margin-top: 20px;
+        padding: 40px 0px;
+    }
+
+}
+
+@media only screen and (max-width:576px) {}

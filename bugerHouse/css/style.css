@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header {
+    /* height: 600px; */
+    background: url("/img/Headerimg.png");
+    padding: 30px 0px;
+    background-size: 100% 100%;
+
+}
+
+.nav {
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo {
+    width: 200px;
+}
+
+.list .nav-li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.nav-li .nav-a {
+    font-size: 21px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #3d2514;
+    font-weight: 700;
+    font-family: "Bebas Neue";
+    text-decoration: none;
+}
+
+.icons .se {
+    font-size: 21px;
+    color: #3d2514;
+}
+.icons .bar {
+    font-size: 21px;
+    color: #3d2514;
+    display: none;
+}
+
+.header-content {
+    text-transform: uppercase;
+    color: #3d2514;
+    font-weight: 400;
+    padding: 70px 0px;
+    margin-top: 50px;
+}
+.header-content .header-p {
+    font-size: clamp(16px,3.5vw,24px);
+    font-family: "Bebas Neue";
+}
+.header-content .header-h1 {
+    font-size: clamp(20px,7.8vw,114px);
+    font-family: "Alfa Slab One";
+    filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+}
+.header-content .header-h3 {
+     font-size: clamp(17px,4.8vw,56px);
+    font-family: "Alfa Slab One";
+    filter: drop-shadow(3.936px 4.528px 0px #fee8bc);
+}
