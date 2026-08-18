@@ -154,3 +154,52 @@
     font-family: "Alfa Slab One";
     background-color: #bf2222;
 }
+
+#foot{
+    /* background: gray; */
+    background-image: url("/img/footer.png");
+    background-size: 100% 100%;
+    padding: 50px 0px;
+}
+#foot .row{
+    display: flex;
+}
+#foot .row .col-4{
+    /* border: 2px solid; */
+    width: 40%;
+}
+#foot .row .col-6{
+    /* border: 2px solid; */
+    width: 60%;
+}
+.data .row{
+    display: flex;
+}
+.data .row .col{
+    width: 33.33%;
+    /* border: 2px solid gold; */
+}
+
+.foot-h3{
+   font-size: clamp(20px, 4.7vw, 30px);
+    color: white;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+
+.foot-ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.foot-ul .foot-li{
+    margin: 10px 0px;
+}
+.foot-ul .foot-li .foot-a{
+        font-size: clamp(16px, 4vw, 24px);
+        color: white;
+        text-decoration: none;
+}
+.foot-p{
+     font-size: clamp(16px, 4vw, 24px);
+        color: white;
+        width: 90%;
+}
