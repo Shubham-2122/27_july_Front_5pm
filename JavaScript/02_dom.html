@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Dom : document object model  -->
+
+    <h1 id="demo">Hello id</h1>
+    <h1 id="test"></h1>
+    <!-- syntax : internal js -->
+    <script>
+
+        // 1) console
+        console.log("hello javascript")
+        console.log("hello shubham jadav")
+        console.log(10 + 20)
+        console.log("mul :", 10 * 7)
+
+        // 2) document.write
+        document.write("hello javascript")
+        document.write("<br>hello shubham")
+
+        document.write("<h2>hello</h2>")
+
+        // 3) innerText : only text allow
+        console.log(document.getElementById("demo"))
+        document.getElementById("demo").innerText = "Hello demo"
+
+        // 4) innerHTML : text and html both allow
+        console.log(document.getElementById("test"))
+        document.getElementById("test").innerHTML = "<i>hello test</i>"
+
+    </script>
+
+</body>
+
+</html>
