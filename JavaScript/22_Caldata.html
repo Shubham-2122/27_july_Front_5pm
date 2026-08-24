@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" placeholder="Enter your num1" id="num1" >
+    <input type="text" placeholder="Enter your Num2" id="num2"> 
+
+    <hr>
+
+
+    <button onclick="sum()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+
+    <br>
+
+    <h1 id="h1"></h1>
+
+    <script>
+
+        let num1 = document.getElementById("num1")
+        // console.log(num1)
+        let num2 = document.getElementById("num2")
+        // console.log(num2)
+
+        function sum(){
+            // let total = num1.value + num2.value  : string value
+
+            let total = parseInt(num1.value) + parseInt(num2.value)
+
+            console.log("Sum : ",total)
+            // document.write("Sum : ",total)
+
+            // document.getElementById("h1").innerHTML = "Sum : "+total
+
+            document.getElementById("h1").innerHTML = `Sum : ${total}`
+        }
+
+         function sub(){
+            // let total = num1.value + num2.value  : string value
+
+            let total = parseInt(num1.value) - parseInt(num2.value)
+
+            console.log("Sub : ",total)
+
+            document.getElementById("h1").innerHTML = `Sub : ${total}`
+        }
+         function mul(){
+            // let total = num1.value + num2.value  : string value
+
+            let total = parseInt(num1.value) * parseInt(num2.value)
+
+            console.log("mul : ",total)
+
+            document.getElementById("h1").innerHTML = `mul : ${total}`
+        }
+         function div(){
+            // let total = num1.value + num2.value  : string value
+
+            let total = parseInt(num1.value) / parseInt(num2.value)
+
+            console.log("div : ",total)
+
+            document.getElementById("h1").innerHTML = `div : ${total}`
+        }
+
+    </script>
+
+</body>
+</html>
