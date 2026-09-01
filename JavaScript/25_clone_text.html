@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" onkeypress="sendata()" placeholder="Enter your text" id="inp"> -->
+      <input type="text" onkeyup="sendata()" placeholder="Enter your text" id="inp">
+    <textarea name="" cols="30" rows="10" id="textdata"></textarea>
+
+
+    <button onclick="sendata()">add data</button>
+
+    <script>
+        let text_tag = document.getElementById("inp")
+        let textdata = document.getElementById("textdata")
+
+        function sendata(){
+            textdata.innerText = text_tag.value
+        }
+
+    </script>
+
+</body>
+</html>

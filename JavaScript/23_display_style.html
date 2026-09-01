@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1{
+            font-size: ;
+        } */
+    </style>
+</head>
+<body>
+    <h1 id="h1">Hello data</h1>
+
+    <button onclick="changestyle()">style change</button>
+
+    <script>
+
+        let h1_tag = document.getElementById("h1");
+
+        function changestyle(){
+            h1_tag.style.background = "red"
+            h1_tag.style.color = "white"
+            h1_tag.style.padding = "40px"
+            h1_tag.style.fontSize = "50px"
+        }
+
+    </script>
+
+</body>
+</html>

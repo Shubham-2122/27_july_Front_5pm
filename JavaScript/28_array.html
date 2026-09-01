@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Array : collection of multiple value store in single varibale []
+          : start index 0 
+    
+
+        synatx : 
+        let data = [12,"as",34] -->
+
+    <script>
+
+        let arr = [1,2,3,4,"shubham","jigar",6,8,3,true,45]
+
+        console.log(arr)
+        // console.log(arr[0])
+        // console.log(arr[4])
+        // document.writeln(arr)
+
+        // 1) simple for loop
+
+        // for(let i=0;i<arr.length;i++){
+        //     // console.log(i)
+        //     console.log(arr[i])
+        //     // document.writeln(arr[i],"<br>")
+        //     document.writeln(`<h5>${arr[i]}</h5>`)
+        // }
+
+        // 2) for of : value
+        // for(let test of arr){
+        //     console.log(test)
+        //     document.writeln(test,"<br>")
+        // }
+
+        // 3) for in : index , value
+
+        for(let test in arr){
+            // console.log(test)
+            console.log(arr[test])
+            document.writeln(arr[test],"<br>")
+        }
+
+    </script>
+
+</body>
+</html>
