@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class Arith{
+            // with store and with paramter
+            x = function sum(x,y){
+                console.log("Sum : ",x+y)
+            }
+            // with store and without paramter
+            y = function sub(){
+                let a = 30,b=12
+                console.log("Sub : ",a-b)
+            }
+
+            // without store and with paramter
+            mul(a,b){
+                console.log("mul : ",a*b)
+            }
+
+            // without store and without paramter
+            div(){
+                let a = 30,b=12
+                console.log("divi : ",a/b)
+            }
+        }
+
+        const ob = new Arith
+        console.log(ob)
+
+        ob.mul(30,10)
+        ob.div()
+        ob.div()
+        ob.x(90,236)
+        ob.y()
+
+        
+
+    </script>
+
+</body>
+</html>

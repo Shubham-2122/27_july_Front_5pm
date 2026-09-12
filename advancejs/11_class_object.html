@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+    class : it's blue object 
+          : collection of memebr function(fucntion) and data memeber(varibale) one class .
+            object create 
+          -->
+
+
+
+          <script>
+
+                class Bank{
+                    // memebr function
+                    x = function details(pin,balance){
+                        // data memebr
+                        let BankName = "HDFC"
+                        let BankIFSC = "HDFC00012H"
+                        let BankPin = pin
+                        let BankBlance = balance
+
+                        console.log("bank Name :",BankName)
+                        console.log("bank IFSC :",BankIFSC)
+                        console.log("bank Pin :",BankPin)
+                        console.log("bank Balance :",BankBlance)
+                        
+                    }
+
+                    y = function deposit(){
+                        console.log("Hello deposite function")
+                    }
+                }
+
+                // console.log(Bank)
+
+                const user = new Bank
+                console.log(user)
+                const jay = new Bank
+
+                user.y()
+                user.x(123,5000)
+
+                console.log(jay)
+
+          </script>
+
+</body>
+</html>
