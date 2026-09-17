@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- promise : it;s object : success and reject 
+
+    3 State : 
+    1) pending : Api Data holds
+    2) fullfield : Api Data Show completed
+    3) rejected : techinacl err , networwk , link proper  -->
+
+    <script>
+
+        function output(data){
+            console.log(data)
+            // document.writeln(data)
+        }
+
+        let p = new Promise((success,rej)=>{
+            let x = 10 
+            if(x != 10){
+                success("Successfully data")
+            }
+            else{
+                rej("Rejeted datas")
+            }
+        })
+        .then((res)=>{
+            output(res)
+        })
+        .catch((res)=>{
+            output(res)
+        })
+
+    </script>
+</body>
+</html>

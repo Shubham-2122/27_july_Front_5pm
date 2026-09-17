@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- poli 
+        1) method overloading (compile) : one class inside function name same but defferent parameter 
+        2) method overrding (run-time) : defferent class inside function name same 
+    -->
+
+    <script>
+
+        // overloading 
+        // class Load{
+        //     test(x){
+        //         console.log("X : ",x)
+        //     }
+        //     test(x,y){
+        //         console.log("Sum : ",x+y)
+        //     }
+        //     test(x,y){
+        //         console.log("Sub : ",x-y)
+        //     }
+        // }
+
+        // const ob = new Load 
+        // ob.test(20,30)
+        // ob.test(20)
+
+
+        // overriding 
+
+        class A{
+            test(){
+                console.log("A class")
+            }
+        }
+        class B extends A {
+             test(){
+                console.log("B class")
+            }
+        }
+        class C extends B {
+             test(){
+                console.log("C class")
+            }
+        }
+
+        // const ob =  new C 
+        // console.log(ob)
+        // ob.test()
+        // ob.test()
+
+        const ab = [new A,new B,new C]
+        console.log(ab)
+        
+        ab.forEach((demo)=>{
+            demo.test()
+        })
+
+    </script>
+
+</body>
+</html>

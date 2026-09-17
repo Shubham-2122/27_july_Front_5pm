@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function Person(name,age){
+
+            // _ private data
+            let _name = name
+            let _age = age 
+
+            // asbcr 
+            this.getName=()=>{
+                return _name
+            }
+            this.getAge=()=>{
+                return _age
+            }
+
+            this.setAge=(newage)=>{
+                return _age = newage
+            }
+        }
+
+        const user = new Person("meet",26)
+
+        console.log(user.name)
+        console.log(user._age)
+
+        console.log(user.getName())
+        console.log(user.getAge())
+
+        user.setAge(28)
+        console.log(user.getAge())
+
+    </script>
+
+</body>
+</html>

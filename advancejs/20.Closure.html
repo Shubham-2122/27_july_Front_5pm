@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let a = 10  // global value
+
+        function demo(){
+            let a = 20 // block scope value
+            console.log("inside : ",a)    
+        }
+
+        demo()
+
+        console.log("outside : ",a)
+
+    </script>
+
+</body>
+</html>

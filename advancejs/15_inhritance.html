@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- inhritance : one propty to another propry  -->
+<!-- 
+    1) single A-B 
+    2) multi level A -B - C 
+    3) multiple  
+    4) hyrachical 
+    5) hybrid  -->
+
+    <script>
+
+        class A {
+            x = function demo(){
+                console.log("A class")
+            }
+        }
+        class B extends A {
+            y = function test(){
+                console.log("B class")
+            }
+        }
+
+        const ob = new B 
+        console.log(ob)
+        ob.x()
+        ob.y()
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- outer function inside function value outer call  -->
+
+    <script>
+
+        function test(){
+            console.log("test")
+        }
+
+        setInterval(test,1000)
+
+        setInterval(()=>{
+            console.log("hello")
+        },1000)
+
+    </script>
+
+</body>
+</html>

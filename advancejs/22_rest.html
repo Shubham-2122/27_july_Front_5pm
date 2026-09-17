@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- rest ... , spared ... -->
+
+    <script>
+
+        function test(a,...runs){
+            let sum = 0
+            for(let demo in runs){
+                sum = sum + runs[demo]
+            }
+            return sum
+        }
+
+        console.log("total Runs : ",test(67,50,36,36,9,57,45))
+    </script>
+
+</body>
+</html>

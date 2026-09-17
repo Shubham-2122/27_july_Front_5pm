@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let demo = {
+            deatils : function test(city,state){
+                console.log("Name : ",this.fname," lname  : ",this.lname," city :",city," State : ",state)
+            }
+        }
+
+        let person = {
+            fname : "meet",
+            lname : "patel"
+        }
+
+         let person1 = {
+            fname : "sujal",
+            lname : "jadavs"
+        }
+
+        demo.deatils.call(person,"surat","Gujarat") // spare agrugment
+
+        demo.deatils.apply(person1,["rajkot","Gujarat"]) // as arrgument
+
+    </script>
+</body>
+</html>
