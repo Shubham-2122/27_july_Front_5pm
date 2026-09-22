@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"shubham",
+        "course":"Front-end"
+    },
+    {
+        "id":2,
+        "name":"ketan",
+        "course":"back-end"
+    },
+    {
+        "id":3,
+        "name":"jenil",
+        "course":"back-end"
+    },
+    {
+        "id":4,
+        "name":"krish",
+        "course":"mern-stack"
+    }
+]

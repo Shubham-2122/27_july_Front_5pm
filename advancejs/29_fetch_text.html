@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetch : inbulit function back-end data show 
+                : promise 
+                : it's 4 method 
+                1) GET : all show
+                2) POST : New Data 
+                3) DELETE : Remove data
+                4) PUT/PATCH  : Update data
+    -->
+
+    <script>
+
+        fetch("data.txt",{
+            method:"GET"
+        })
+        .then((res)=>{
+            // text data js convert string
+            return res.text()
+        })
+        .then((res)=>{
+            console.log(res)
+            document.writeln(res)
+        })
+
+    </script>
+
+</body>
+</html>

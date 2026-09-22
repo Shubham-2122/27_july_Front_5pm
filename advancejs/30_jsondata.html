@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- json : javascipt string objet noation / json string
+    key : value
+    1) rest api : easy wasy 
+    2) easy read   -->
+
+    <!-- let person = `[
+    {
+        "id":1,
+        "name":"het",
+        "age":21
+    }
+    ]`
+
+    let person = [
+    {
+        id:1,
+        name:"het",
+        age:23
+    }
+    ] -->
+
+    <script>
+
+        let jsondata = `[
+    {
+        "id":1,
+        "name":"het",
+        "age":21
+    },
+    {
+        "id":2,
+        "name":"jiten",
+        "age":27
+    },
+    {
+        "id":3,
+        "name":"harshil",
+        "age":24
+    }
+        
+]`
+
+        // console.log(jsondata)
+        // document.writeln(jsondata)
+
+        let perosn = JSON.parse(jsondata)
+        
+        console.log(perosn)
+        perosn.forEach((data) => {
+            console.log(data)
+            document.writeln(`<h3>id : ${data.id} name : ${data.name}</h3>`)
+        });
+
+
+        let demo = [
+            {
+                id:1,
+                name :"jignesh",
+                age : 34,
+                course:"front-end"
+            },
+            {
+                id:2,
+                name :"sujal",
+                age : 26,
+                course:"back-end"
+            },
+            {
+                id:3,
+                name :"mitesh",
+                age : 37,
+                course:"mern-stack"
+            }
+        ]
+
+        console.log(demo)
+
+        let test= JSON.stringify(demo)
+        console.log(test)
+
+    </script>
+
+
+</body>
+
+</html>

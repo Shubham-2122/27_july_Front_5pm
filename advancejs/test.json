@@ -1,0 +1,36 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "shubham",
+            "course": "Front-end"
+        },
+        {
+            "id": 2,
+            "name": "ketan",
+            "course": "back-end"
+        },
+        {
+            "id": 3,
+            "name": "jenil",
+            "course": "back-end"
+        },
+        {
+            "id": 4,
+            "name": "krish",
+            "course": "mern-stack"
+        }
+    ],
+    "admins":[
+        {
+            "id": 1,
+            "name": "admin",
+            "course": "Front-end"
+        },
+        {
+            "id": 2,
+            "name": "subadmin",
+            "course": "back-end"
+        }
+    ]
+}
