@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+        const getIuser = async () => {
+            try {
+                const res = await axios.get("https://6ab7b5939b03155d0808eaa6.mockapi.io/users")
+                console.log(res.data)
+            } catch (error) {
+                console.log("Api data not", error)
+            }
+        }
+        getIuser()
+
+        let person = {
+            name : "jenil",
+            surname : "patel",
+            email :"jenil@gmail.com",
+            city:"surat"
+        }
+
+        const createUser =async()=>{
+            try {
+                const res = await axios.post("https://6ab7b5939b03155d0808eaa6.mockapi.io/users",person)
+                console.log(res.data)
+            } catch (error) {
+                console.log("Api not found",error)
+            }
+        }
+        // createUser()
+
+        // deleteuser
+
+        const deleteUser=async(id)=>{
+            try {
+                const res = await axios.delete(`https://6ab7b5939b03155d0808eaa6.mockapi.io/users/${id}`)
+                console.log(res.data)
+            } catch (error) {
+                console.log("Api not found",error)
+            }
+        }
+
+        // deleteUser(6)
+
+        // put  : whole data 
+        // patch : spacife password 
+
+        let person1 = {
+            id : "4",
+            name:"shubham",
+            surname:"jadav",
+            email:"shubhamjadav.tops@gmail.com",
+            city:"bharuch",
+            phone:7567567
+        }
+
+        const updateUser = async()=>{
+            try {
+                const res = await axios.put(`https://6ab7b5939b03155d0808eaa6.mockapi.io/users/${person1.id}`,person1)
+                console.log(res.data)
+            } catch (error) {
+                console.log("Api data not Found",error)
+            }
+        }   
+        updateUser()
+
+    </script>
+
+</body>
+
+</html>

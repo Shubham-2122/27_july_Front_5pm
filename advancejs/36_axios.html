@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.13.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <!-- axios : 3rd paty lib js  -->
+     <!-- fetch : inbuilt 
+     axios : get,post,delete,put  : code reduce -->
+
+     <script>
+
+        fetch("https://jsonplaceholder.typicode.com/users",{
+            method:"GET"
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((res)=>{
+            console.log(res)
+        })
+
+        const getuser = async()=>{
+            const res = await axios.get("https://jsonplaceholder.typicode.com/users")
+            console.log(res.data)
+
+            let user = await res.data
+            for(let demo of user){
+                console.log(demo)
+            }
+        }
+        getuser()
+     </script>
+
+</body>
+</html>
