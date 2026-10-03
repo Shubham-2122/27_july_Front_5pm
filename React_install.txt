@@ -1,0 +1,54 @@
+Javascript 
+
+React : javascript lib
+         : vitrual Dom / Real Dom
+        : Compoenent Base : /reuse / reduce
+        : without page refresh website
+ 
+vue : javascript fremawork
+     : Real Dom
+    : component class
+
+agul :javascript fremawork
+      :Real Dom
+      component class
+
+
+Node : Javascript Runtime Eneviroment
+         : clinet side 
+         : v24.21.0
+  
+cmd : node -v 
+cmd : npm -v 
+
+npm : node package manager 
+npm vs npx 
+:node package entasible
+
+cmd : npx create-react-app app-name
+cmd : cd appname
+cmd : npm start
+
+
+React+vite 
+cmd : npm create vite@latest my-react-app 
+cmd : npm run dev
+
+
+React struct : old 
+
+1) Node_module : npm install / npm i
+2) Public : / index.html .. Asset : static image
+3) src : index.js , App.js
+4) package-lock.json , package.json : 
+
+
+flow : index.html -> index.js -> App.js 
+working -> App.js -> index.js -> index.html
+
+react struct : new
+
+
+
+
+
