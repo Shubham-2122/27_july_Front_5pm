@@ -1,0 +1,7 @@
+.ab{
+    background: linear-gradient(red,green,blue);
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px;
+}
