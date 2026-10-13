@@ -4,7 +4,8 @@
 
 import React from 'react'
 // import ClassState from './ClassState'
-import FuncState from './FuncState'
+// import FuncState from './FuncState'
+import FuncObje from './FuncObje'
 
 function MainState() {
   return (
@@ -13,7 +14,8 @@ function MainState() {
 
       {/* <ClassState /> */}
 
-      <FuncState />
+      {/* <FuncState /> */}
+      <FuncObje />
     </div>
   )
 }
