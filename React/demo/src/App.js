@@ -3,9 +3,10 @@ import React from "react";
 // import Formdata from "./Form_halding/Formdata";
 // import FormObj from "./Form_halding/FormObj";
 // import Test from "./Effect/Test";
-import UserData from "./Effect/UserData";
-import UserTab from "./Effect/UserTab";
-import Products from "./Effect/Products";
+// import UserData from "./Effect/UserData";
+// import UserTab from "./Effect/UserTab";
+// import Products from "./Effect/Products";
+import MainContext from "./context/MainContext";
 // import Hello from "./Jsx/Hello";
 // import Css from "./Css/Css";
 // import MainProps from "./Props/MainProps";
@@ -37,7 +38,9 @@ function App(){
           {/* <Test /> */}
           {/* <UserData /> */}
           {/* <UserTab /> */}
-          <Products />
+          {/* <Products /> */}
+
+          <MainContext />
 
        </div>
     )
