@@ -1,9 +1,16 @@
 import React from 'react'
+import FontsData from './Compon/FontsData'
+import Color from './Compon/Color'
+import Space from './Compon/Space'
+import Bordardata from './Compon/Bordardata'
 
 function App() {
   return (
     <div>
-      <h1>Hello app</h1>
+      {/* <FontsData /> */}
+      {/* <Color /> */}
+      {/* <Space /> */}
+      <Bordardata />
     </div>
   )
 }
