@@ -1,1 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Trad:wght@100..400&display=swap');
 @import "tailwindcss";
+
+/*  only tag apply */
+@layer base{
+    h1{
+        font-size: clamp(20px,4.5vw,50px);
+
+    }
+}
+
+/* design component use create kari saki ye done */
+@layer components{
+    .card{
+        height: 300px;
+        width: 200px;
+        border: 2px solid;
+    }
+    .card:hover{
+        background-color: lightcoral;
+    }
+    .btn{
+        padding: 10px 20px;
+        border: 2px solid;
+        border-radius: 20px;
+        background: linear-gradient(red,green,blue);
+    }
+}
+
+@layer utilities{
+    .font1{
+        font-family: "Playwrite IT Trad", cursive;
+  font-optical-sizing: auto;
+/* font-weight: <weight>;
+  font-style: normal; */
+    }
+    
+}

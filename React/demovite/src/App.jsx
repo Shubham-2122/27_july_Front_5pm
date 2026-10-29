@@ -5,6 +5,8 @@ import Space from './Compon/Space'
 import Bordardata from './Compon/Bordardata'
 import Widthdata from './Compon/Widthdata'
 import Flexdata from './Compon/Flexdata'
+import Demo from './Compon/Demo'
+import Cardddata from './Compon/Cardddata'
 
 function App() {
   return (
@@ -14,7 +16,10 @@ function App() {
       {/* <Space /> */}
       {/* <Bordardata /> */}
       {/* <Widthdata /> */}
-      <Flexdata />
+      {/* <Flexdata /> */}
+
+      {/* <Demo /> */}
+    <Cardddata />
     </div>
   )
 }
