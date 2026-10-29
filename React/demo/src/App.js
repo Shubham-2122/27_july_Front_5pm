@@ -3,6 +3,10 @@ import Boot from "./Boostrapdata/Boot";
 import CardDemo from "./Boostrapdata/CardDemo";
 import Footer from "./Boostrapdata/Footer";
 import Login from "./Boostrapdata/Login";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./layout/Pages/Home";
+import About from "./layout/Pages/About";
+import Contact from "./layout/Pages/Contact";
 // import MainState from "./State/MainState";
 // import Formdata from "./Form_halding/Formdata";
 // import FormObj from "./Form_halding/FormObj";
@@ -19,8 +23,8 @@ import Login from "./Boostrapdata/Login";
 
 function App(){
     return(
-       <div>
-         <h1>Hello App</h1>
+       <BrowserRouter>
+         {/* <h1>Hello App</h1> */}
         {/* <ClassCompo />
         <FunCompo /> */}
 
@@ -48,10 +52,16 @@ function App(){
 
           {/* <Boot /> */}
           {/* <CardDemo /> */}
-          <Login />
-          <Footer />
+          {/* <Login />
+          <Footer /> */}
 
-       </div>
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+         </Routes>
+
+       </BrowserRouter>
     )
 }
 export default App
