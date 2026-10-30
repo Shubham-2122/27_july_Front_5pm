@@ -7,6 +7,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./layout/Pages/Home";
 import About from "./layout/Pages/About";
 import Contact from "./layout/Pages/Contact";
+import About1 from "./layout/Pages/About1";
+import About2 from "./layout/Pages/About2";
+import NotFound from "./layout/Pages/NotFound";
 // import MainState from "./State/MainState";
 // import Formdata from "./Form_halding/Formdata";
 // import FormObj from "./Form_halding/FormObj";
@@ -57,8 +60,12 @@ function App(){
 
          <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About />} >
+               <Route path="about1" element={<About1 />} />
+               <Route path="about2" element={<About2 />} />
+            </Route>
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
          </Routes>
 
        </BrowserRouter>
