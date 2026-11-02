@@ -10,6 +10,9 @@ import Contact from "./layout/Pages/Contact";
 import About1 from "./layout/Pages/About1";
 import About2 from "./layout/Pages/About2";
 import NotFound from "./layout/Pages/NotFound";
+import Life from "./LifeCycle/Life";
+import RefmData from "./Hooks/RefmData";
+import DemoData from "./Hooks/DemoData";
 // import MainState from "./State/MainState";
 // import Formdata from "./Form_halding/Formdata";
 // import FormObj from "./Form_halding/FormObj";
@@ -65,6 +68,9 @@ function App(){
                <Route path="about2" element={<About2 />} />
             </Route>
             <Route path="/contact" element={<Contact />} />
+             <Route path="/life" element={<Life />} />
+             <Route path="/ref" element={<RefmData />} />
+             <Route path="/reducer" element={<DemoData />} />
             <Route path="*" element={<NotFound />} />
          </Routes>
 
