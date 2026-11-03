@@ -13,6 +13,7 @@ import NotFound from "./layout/Pages/NotFound";
 import Life from "./LifeCycle/Life";
 import RefmData from "./Hooks/RefmData";
 import DemoData from "./Hooks/DemoData";
+import TestData from "./Hooks/TestData";
 // import MainState from "./State/MainState";
 // import Formdata from "./Form_halding/Formdata";
 // import FormObj from "./Form_halding/FormObj";
@@ -27,38 +28,38 @@ import DemoData from "./Hooks/DemoData";
 // import ClassCompo from "./Component/ClassCompo";
 // import FunCompo from "./Component/FunCompo";
 
-function App(){
-    return(
-       <BrowserRouter>
+function App() {
+   return (
+      <BrowserRouter>
          {/* <h1>Hello App</h1> */}
-        {/* <ClassCompo />
+         {/* <ClassCompo />
         <FunCompo /> */}
 
-        {/* jsx compoenent */}
-        {/* <Hello /> */}
-        
-        {/* css  */}
-          {/* <Css /> */}
+         {/* jsx compoenent */}
+         {/* <Hello /> */}
 
-          {/* <MainProps /> */}
+         {/* css  */}
+         {/* <Css /> */}
+
+         {/* <MainProps /> */}
 
          {/* state */}
-          {/* <MainState /> */}
+         {/* <MainState /> */}
 
 
-          {/* <Formdata /> */}
-          {/* <FormObj /> */}
+         {/* <Formdata /> */}
+         {/* <FormObj /> */}
 
-          {/* <Test /> */}
-          {/* <UserData /> */}
-          {/* <UserTab /> */}
-          {/* <Products /> */}
+         {/* <Test /> */}
+         {/* <UserData /> */}
+         {/* <UserTab /> */}
+         {/* <Products /> */}
 
-          {/* <MainContext /> */}
+         {/* <MainContext /> */}
 
-          {/* <Boot /> */}
-          {/* <CardDemo /> */}
-          {/* <Login />
+         {/* <Boot /> */}
+         {/* <CardDemo /> */}
+         {/* <Login />
           <Footer /> */}
 
          <Routes>
@@ -68,13 +69,15 @@ function App(){
                <Route path="about2" element={<About2 />} />
             </Route>
             <Route path="/contact" element={<Contact />} />
-             <Route path="/life" element={<Life />} />
-             <Route path="/ref" element={<RefmData />} />
-             <Route path="/reducer" element={<DemoData />} />
+            <Route path="/life" element={<Life />} />
+            <Route path="/ref" element={<RefmData />} />
+            <Route path="/reducer" element={<DemoData />} />
+            <Route path="/test" element={<TestData />} />
+
             <Route path="*" element={<NotFound />} />
          </Routes>
 
-       </BrowserRouter>
-    )
+      </BrowserRouter>
+   )
 }
 export default App

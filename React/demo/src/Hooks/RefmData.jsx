@@ -4,6 +4,7 @@
 
 import React, { useRef } from 'react'
 import Header from '../layout/Coman/Header'
+import useCount from './useCount';
 
 function RefmData() {
 
@@ -18,6 +19,8 @@ function RefmData() {
         refelemet.current.style.color = "white"
     }
 
+    const {cout} = useCount(2)
+
   return (
     <div>
       <Header />
@@ -27,6 +30,8 @@ function RefmData() {
     <button onClick={getdata}>Focusdata</button>
 
     <button onClick={getcolor}>change color</button>
+
+    <h1>count : {cout}</h1>
     </div>
   )
 }
