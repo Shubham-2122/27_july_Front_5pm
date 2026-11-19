@@ -11,7 +11,7 @@ function Department() {
                 {/* Page Title */}
                 <PageHead title="Department" list="Department" />
                 
-                {/* End Page Title */}
+              
                 {/* Departments Tabs Section */}
                 <section id="departments-tabs" className="departments-tabs section">
                     <div className="container" data-aos="fade-up" data-aos-delay={100}>

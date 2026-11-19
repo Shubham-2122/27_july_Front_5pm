@@ -1,0 +1,75 @@
+project name is a Website Car_blogs
+incase -> npm i :-for node_module
+
+
+1) cmd>npx create-react-app app-name
+2) cmd>cd app-name
+3) cmd>npm i react-router-dom
+4) cmd> npm react-boostrap5
+5) cmd>npm i mdb-react-ui-kit
+6) cmd>npm i @fortawesome/fontawesome-free
+
+start from api
+--> first time json-server install process
+7)cmd-->npm install -g json-server
+8)db.json file creted by root folder
+	format {
+    "user":[
+        {
+            "id":"1",
+            "name":"shubham jadav",
+            "email":"jadavshubham5@gmail.com",
+            "password":"1234",
+            "mobiel":"12345678901",
+            "status":"unblock"
+        },
+        {
+            "id":"2",
+            "name":"sujal jadav",
+            "email":"jadavsujal5@gmail.com",
+            "password":"2345",
+            "mobiel":"54345678901",
+            "status":"unblock"
+        }
+
+    ],
+    "contact":[
+        {
+            "id":"1",
+            "name":"jay",
+            "email":"jay@gmail.com",
+            "comment":"hihk"
+        },
+        {
+            "id":"2",
+            "name":"shubham",
+            "email":"shubham@gmail.com",
+            "comment":"asdjhkughuk"
+        }
+    ],
+    "admin":[
+        {
+            "id":"1",
+            "name":"admin",
+            "email":"admin@gmail.com",
+            "password":"123456"
+        }
+    ],
+    "employee":[
+        {
+            "id":"1",
+            "name":"emp1",
+            "email":"emap1@gmail.com",
+            "password":"1234567",
+            "mobile":7465343654,
+            "status":"unblock"
+        }
+    ]
+    
+}
+9) package.json in "server":"json-server --watch db.json --port 3000"
+10) cmd -> npx json-server --watch db.json
+11) cmd->npm install -save reacttostify
+---> api fetch karva axios server use
+12) cmd->npm i axios
+loader pinner type use
