@@ -11,6 +11,7 @@ import Contact from './Website/Pages/Contact';
 import Appointment from './Website/Pages/Appointment';
 import NotFound from './Website/Pages/NotFound';
 import Dashbaord from './Admin/Apages/Dashbaord';
+import ServiceManage from './Admin/Apages/ServiceManage';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           {/* /adminrouter */}
 
           <Route path='/dash' element={<Dashbaord />} />
+          <Route path='servicemange' element={<ServiceManage />} />
 
         </Routes>
     </BrowserRouter>

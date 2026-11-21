@@ -17,9 +17,9 @@ function AHeader() {
                         <nav id="navmenu" className="navmenu">
                             <ul>
                                 {/* <li><NavLink to="/" className="">Home</NavLink></li> */}
-                                <li><NavLink to="/about" >About</NavLink></li>
-                                <li><NavLink to="/department" >Departments</NavLink></li>
-                                <li><NavLink to="/service" >Services</NavLink></li>
+                                {/* <li><NavLink to="/about" >About</NavLink></li>
+                                <li><NavLink to="/department" >Departments</NavLink></li> */}
+                                <li><NavLink to="/servicemange" >Services</NavLink></li>
                                 <li><NavLink to="/doctors" >Doctors</NavLink></li>
                                 <li className="dropdown"><a href="#"><span>More Pages</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
                                     <ul>

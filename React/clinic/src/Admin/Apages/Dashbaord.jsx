@@ -6,7 +6,7 @@ function Dashbaord() {
   return (
     <div>
         <AHeader />
-        <APageHead title="Admin Dashbaord" list="Dashbaord" />
+        <APageHead title="Admin Dashbaord" />
         <h1 className='text-center'>Hello This Admin Dashbaord</h1>
     </div>
   )
