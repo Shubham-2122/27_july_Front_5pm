@@ -19,7 +19,13 @@ function AHeader() {
                                 {/* <li><NavLink to="/" className="">Home</NavLink></li> */}
                                 {/* <li><NavLink to="/about" >About</NavLink></li>
                                 <li><NavLink to="/department" >Departments</NavLink></li> */}
-                                <li><NavLink to="/servicemange" >Services</NavLink></li>
+                                 <li className="dropdown"><a href="#"><span>Services</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
+                                    <ul>
+                                        <li><NavLink to="/servicemange" >manage</NavLink></li>
+                                        <li><NavLink to="/serviceadd" >Add form</NavLink></li>
+                                    </ul>
+                                </li>
+                             
                                 <li><NavLink to="/doctors" >Doctors</NavLink></li>
                                 <li className="dropdown"><a href="#"><span>More Pages</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
                                     <ul>

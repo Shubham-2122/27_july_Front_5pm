@@ -1,59 +1,72 @@
 {
-    "admin":[
-        {
-            "id":"1",
-            "name":"admin",
-            "email":"admin@gmail.com",
-            "password":"1234"
-        },
-        {
-            "id":"2",
-            "name":"subadmin",
-            "email":"subadmin@gmail.com",
-            "password":"123456"
-        }
-    ],
-    "users":[
-        {
-            "id":"1",
-            "name":"jay",
-            "email":"jay@gmail.com",
-            "password":"1234",
-            "status":"unblock"
-        },
-        {
-            "id":"2",
-            "name":"nirav",
-            "email":"nirav@gmail.com",
-            "password":"123456",
-            "status":"block"
-        },
-        {
-            "id":"3",
-            "name":"user",
-            "email":"user@gmail.com",
-            "password":"4321",
-            "status":"block"
-        }
-    ],
-    "services":[
-        {
-            "id":"1",
-            "name":"Neurology",
-            "desc":"asdgmausd asdjhasjd asdkghasdj",
-            "img":"https://www.bing.com/th/id/OIP.ajmq4XRtmwf-YOczWKJckwHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2"
-        },
-          {
-            "id":"2",
-            "name":"Orthopedics",
-            "desc":"asdgmausddsaf asdjhasjd asdkghasdj",
-            "img":"https://www.bing.com/th/id/OIP.jTLY7xH3eFvD6MeIFTwhHgHaFQ?w=193&h=137&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2"
-        },
-        {
-             "id":"3",
-            "name":"Pediatrics",
-            "desc":"asdgmausddsaf asdjhasjd asdkghasdj",
-            "img":"https://www.bing.com/th/id/OIP._X66CkwPYL_wNponAxcTYwHaFO?w=193&h=136&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2"
-        }        
-    ]
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "subadmin",
+      "email": "subadmin@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "jay",
+      "email": "jay@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "nirav",
+      "email": "nirav@gmail.com",
+      "password": "123456",
+      "status": "block"
+    },
+    {
+      "id": "3",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "4321",
+      "status": "block"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "name": "Neurology",
+      "desc": "asdgmausd asdjhasjd asdkghasdj",
+      "img": "https://www.bing.com/th/id/OIP.ajmq4XRtmwf-YOczWKJckwHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2"
+    },
+    {
+      "id": "2",
+      "name": "Orthopedics",
+      "desc": "asdgmausddsaf asdjhasjd asdkghasdj",
+      "img": "https://www.bing.com/th/id/OIP.jTLY7xH3eFvD6MeIFTwhHgHaFQ?w=193&h=137&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2"
+    },
+    {
+      "id": "3",
+      "name": "Pediatrics",
+      "desc": "asdgmausddsaf asdjhasjd asdkghasdj",
+      "img": "https://www.bing.com/th/id/OIP._X66CkwPYL_wNponAxcTYwHaFO?w=193&h=136&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2"
+    },
+    {
+      "id": "jB_loOUpn_c",
+      "name": "detal care",
+      "desc": "asdfasfdsadf asf sadf sdg sdfg sdfg sdfg ",
+      "img": "https://www.bing.com/th/id/OIP.jGWa5sqYS4XjoTMnnA80tQHaFN?w=193&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+    },
+    {
+      "id": "88aqXAr-CdY",
+      "name": "cancer hospital",
+      "desc": "sdf sdfas dfas fdasd asd asd sef",
+      "img": "https://www.bing.com/th/id/OIP.jGWa5sqYS4XjoTMnnA80tQHaFN?w=193&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

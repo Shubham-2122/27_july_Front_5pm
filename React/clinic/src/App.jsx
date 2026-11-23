@@ -12,6 +12,7 @@ import Appointment from './Website/Pages/Appointment';
 import NotFound from './Website/Pages/NotFound';
 import Dashbaord from './Admin/Apages/Dashbaord';
 import ServiceManage from './Admin/Apages/ServiceManage';
+import ServiceAdd from './Admin/Apages/ServiceAdd';
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
 
           <Route path='/dash' element={<Dashbaord />} />
           <Route path='servicemange' element={<ServiceManage />} />
+          <Route path='serviceadd' element={<ServiceAdd />} />
 
         </Routes>
     </BrowserRouter>
