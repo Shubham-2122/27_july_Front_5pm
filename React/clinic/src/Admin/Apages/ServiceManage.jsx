@@ -11,6 +11,24 @@ function ServiceManage() {
         fetchdata()
     }, [])
 
+    const [sigservice, setsigservice] = useState({
+        id: "",
+        name: "",
+        desc: "",
+        img: ""
+    })
+
+    // get signle data
+    const getService = async (id) => {
+        try {
+            const res = await axios.get(`http://localhost:3000/services/${id}`)
+            // console.log(res.data)
+            setsigservice(res.data)
+        } catch (error) {
+            console.log("Api Data Not Found", error)
+        }
+    }
+
     const fetchdata = async () => {
         try {
             const res = await axios.get("http://localhost:3000/services")
@@ -18,6 +36,18 @@ function ServiceManage() {
             setservice(res.data)
         } catch (error) {
             console.log("Api data not Found", error)
+        }
+    }
+
+    // delete data 
+    const deleteService =async(id)=>{
+        try {
+            const res = await axios.delete(`http://localhost:3000/services/${id}`)
+            console.log("Delete Service success")
+            fetchdata()
+
+        } catch (error) {
+            console.log("Api Data not Found",error)
         }
     }
 
@@ -47,9 +77,9 @@ function ServiceManage() {
                                         </td>
                                         <td>{data.name}</td>
                                         <td>
-                                            <button className='btn btn-info'>View</button>
+                                            <button className='btn btn-info' data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => getService(data.id)}>View</button>
                                             <button className='btn btn-success mx-2'>Edit</button>
-                                            <button className='btn btn-danger'>Delete</button>
+                                            <button className='btn btn-danger' onClick={()=>deleteService(data.id)} >Delete</button>
                                         </td>
                                     </tr>
                                 )
@@ -60,6 +90,34 @@ function ServiceManage() {
                 </table>
 
             </div>
+            <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h1 className="modal-title fs-5" id="exampleModalLabel">{sigservice.name}</h1>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+                        </div>
+                        <div className="modal-body">
+                           <div className="row">
+                             <div className="col-12">
+                                <div className="service-item">
+                                    <div className="service-image">
+                                        <img src={sigservice.img} alt="Cardiology Services" className="img-fluid" />
+                                        
+                                    </div>
+                                    <div className="service-content">
+                                        <h3>{sigservice.name}</h3>
+                                        <p>{sigservice.desc}</p>
+                                    </div>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }
