@@ -13,6 +13,7 @@ import NotFound from './Website/Pages/NotFound';
 import Dashbaord from './Admin/Apages/Dashbaord';
 import ServiceManage from './Admin/Apages/ServiceManage';
 import ServiceAdd from './Admin/Apages/ServiceAdd';
+import DocotorsManage from './Admin/Apages/DocotorsManage';
 
 function App() {
 
@@ -41,8 +42,9 @@ function App() {
           {/* /adminrouter */}
 
           <Route path='/dash' element={<Dashbaord />} />
-          <Route path='servicemange' element={<ServiceManage />} />
-          <Route path='serviceadd' element={<ServiceAdd />} />
+          <Route path='/servicemange' element={<ServiceManage />} />
+          <Route path='/serviceadd' element={<ServiceAdd />} />
+          <Route path='/doctorsmanage' element={<DocotorsManage />} />
 
         </Routes>
     </BrowserRouter>

@@ -62,5 +62,33 @@
       "img": "https://www.bing.com/th/id/OIP.jGWa5sqYS4XjoTMnnA80tQHaFN?w=193&h=136&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2"
     }
   ],
+  "doctors":[
+    {
+      "id":1,
+      "name":"Dr.patil",
+      "cate":"Neurologist",
+      "desc":"jasgdjkasghdkuashgdku",
+      "exp":"10",
+      "img":"https://www.bing.com/th/id/OIP.T1u6Gr1XJVQYQ6sjfQMlcgHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2"
+    },
+    {
+      "id":2,
+      "name":"Dr.ketan",
+      "cate":"Orthopedic Surgeon",
+      "desc":"jasgdjkasghdkuas  sadsad asdhgdku",
+      "exp":"5",
+      "img":"https://www.bing.com/th/id/OIP.ITosAx3a3gdTXy4WMprA9wHaE8?w=193&h=135&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2"
+    },
+    {
+      "id":3,
+      "name":"Dr. Emily Rodriguez",
+      "cate":"Pediatrician",
+      "desc":"helllo data  sadsad asdhgdku",
+      "exp":"7",
+      "img":"https://www.bing.com/th/id/OIP.lcqX70iqkSZrE-H4Pqo_lAHaHa?w=193&h=193&c=8&rs=1&qlt=90&o=6&pid=ImgAns&rm=2"
+    }
+  ]
+  ,
+  
   "$schema": "./node_modules/json-server/schema.json"
 }
